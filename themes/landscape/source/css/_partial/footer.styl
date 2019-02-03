@@ -1,0 +1,54 @@
+#footer
+  background: color-primary
+  color: color-grey
+
+  a
+    color: color-link
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+  form
+    padding: 75px 20px 0 0
+    width: 300px
+    color: white
+
+  @media mq-normal
+    margin-left: sidebar-width
+
+#footer-ninja
+  width: 50%
+  object-fit: contain
+  z-index: 1000
+
+  @media mq-mobile
+    margin-top: 25px
+
+#footer-info
+  padding: 20px
+  background-color: color-background-dark
+  text-align: right
+  line-height: line-height
+  font-size: 0.85em
+
+  @media mq-mobile-and-tablet
+    text-align: center
+
+  span
+    margin-left: 5px
+
+#footer-subscription
+  margin: auto
+  max-width: 800px
+  background-color: color-primary
+  display: flex
+
+#transparent-bar
+  height: 50px
+  width: 100%
+  left: 0
+  position: absolute
+  background-color: color-background-light
+
+  @media mq-mobile-and-tablet
+    background-color: color-background-dark

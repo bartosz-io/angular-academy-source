@@ -1,0 +1,217 @@
+#header
+  z-index: 1000
+  height: header-height
+  position: fixed
+  display: flex
+  width: 100%
+  background-color: color-header
+
+#header-outer
+  height: 100%
+  position: relative
+
+#header-title
+  left: 0;
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center
+
+#header-menu
+  margin-right: 20px
+
+#slack
+  top: 80px
+  width: 100%
+  z-index: 100
+  position: fixed
+  font-size: 14px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  box-sizing: border-box
+  background-color: #EBEBEB
+
+  @media mq-mobile
+    position: absolute
+
+  img
+    width: 35px
+    margin-right: 5px
+
+  #join-slack
+    @media mq-not-large
+      display: none
+
+  #join-slack-short
+    display: none
+    
+    @media mq-not-large
+      display: block
+
+  .slack-link
+    white-space: nowrap
+    display: inline
+    text-decoration: none
+    text-transform: uppercase
+    transition: opacity 0.2s
+    margin: 10px
+    border-radius: 4px
+    border: 1px solid black
+    color: black
+    padding: 1px 10px
+    transition: 0.2s ease-in
+
+    &:hover
+      opacity: 1
+      background-color: black
+      color: white
+
+  .bold
+    font-weight: bold
+
+  @media mq-normal
+    padding: "0px 30px 0px calc(%dpx + 30px)" % sidebar-width
+
+#logo-text
+  font-size: logo-size
+  line-height: logo-size
+  text-decoration: none
+  font-weight: bold
+  color: white
+
+  @media mq-mobile
+    display: none
+
+#logo-image
+  margin: 0 8px
+
+  @media mq-mobile
+    display: none
+
+#logo-image-mobile
+  display: none
+  height: 48px
+  margin: 0 12px
+
+  @media mq-mobile
+    display: block
+
+$nav-link
+  float: left
+  color: #fff
+  opacity: 0.6
+  text-decoration: none
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2)
+  transition: opacity 0.2s
+  display: block
+  margin: 30px 15px
+  
+  &:hover
+    opacity: 1
+
+.nav-icon
+  @extend $nav-link
+  font-family: font-icon
+  text-align: center
+  font-size: 22px
+  width: font-size
+  height: font-size
+  position: relative
+  cursor: pointer
+
+.main-nav-link
+  @extend $nav-link
+  letter-spacing: 1px
+  font-size: 16px
+  text-transform: uppercase
+
+  &.highlight
+    padding: 10px 15px
+    margin: 20px 10px
+    border: 1px solid color-primary
+    border-radius: 4px
+    color: color-primary
+    opacity: 1
+    transition: 0.3s
+
+    @media mq-mobile-and-tablet
+      padding: 5px 10px
+      margin: 25px 15px
+
+    &:hover
+      background-color: color-primary-dark
+      color: white
+
+  @media mq-mobile-and-tablet
+    &:not(.highlight)
+      display: none
+
+#main-nav-toggle
+  display: none
+  &:before
+    content: "\f0c9"
+  @media mq-mobile-and-tablet
+    display: block
+
+#sub-nav
+  float: right
+  margin-right: -15px
+
+#nav-rss-link
+  &:before
+    content: "\f09e"
+
+#nav-search-btn
+  &:before
+    content: "\f002"
+
+#search-form-wrap
+  position: absolute
+  top: 15px
+  width: 150px
+  height: 30px
+  right: -150px
+  opacity: 0
+  transition: 0.2s ease-out
+  &.on
+    opacity: 1
+    right: 0
+  @media mq-mobile
+    width: 100%
+    right: -100%
+
+.search-form
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  background: #fff
+  padding: 5px 15px
+  border-radius: 15px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+.search-form-input
+  border: none
+  background: none
+  color: color-default
+  width: 100%
+  font: 13px font-sans
+  outline: none
+  &::-webkit-search-results-decoration
+  &::-webkit-search-cancel-button
+    -webkit-appearance: none
+
+.search-form-submit
+  position: absolute
+  top: 50%
+  right: 10px
+  margin-top: -7px
+  font: 13px font-icon
+  border: none
+  background: none
+  color: #bbb
+  cursor: pointer
+  &:hover, &:focus
+    color: #777

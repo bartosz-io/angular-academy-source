@@ -1,0 +1,33 @@
+#sidebar
+  background-color: color-sidebar
+  padding-bottom: 0px
+  display: flex
+  flex-direction: column
+  z-index: 1000
+
+  @media mq-normal
+    height: "calc(100% - %s)" % header-height
+    width: sidebar-width
+    top: header-height
+    position: fixed
+    padding-bottom: 20px
+
+.widget-wrap
+  padding: 20px
+  margin: 20px 20px 0 20px
+  border-radius: 4px
+  background-color: color-widget
+
+.widget-title
+  @extend $block-caption
+
+.widget
+  padding-top: 15px
+  a
+    color: white
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  ul, ol, dl
+    margin-left: 0
+    list-style: none

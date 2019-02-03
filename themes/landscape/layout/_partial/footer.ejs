@@ -1,0 +1,23 @@
+<footer id="footer">
+  <div id="footer-subscription">
+    <div id="transparent-bar"></div>
+    <img id="footer-ninja" src="/assets/ninja-jump.png" alt="ninja">
+    <form class="subscription">
+      <div id="caption">Angular is going fast, stay up to date!</div>
+      <input type="text" placeholder="Your name">
+      <input type="text" placeholder="Your email">
+      <button class="cta-blue">Subscribe</button>
+      <div class="consent">
+          By clicking the button you agree to receive email newsletter. NO SPAM!
+      </div>
+    </form>
+  </div>
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div id="footer-info">
+    <span>&copy; <%= date(new Date(), 'YYYY') %> <%= config.title %></span>
+    <span>Terms of use</span>
+    <span>Privacy Policy</span>
+  </div>
+</footer>

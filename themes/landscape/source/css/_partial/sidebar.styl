@@ -1,0 +1,83 @@
+if sidebar is bottom
+  @import "sidebar-bottom"
+else
+  @import "sidebar-aside"
+
+#gradient
+  height: 30px;
+  width: sidebar-width
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 100%)
+
+  @media mq-mobile-and-tablet
+    width: 100%
+
+#sidebar-info
+  padding: 0px 30px
+  color: white
+  font-size: 15px
+
+  @media mq-mobile-and-tablet
+    display: none
+
+#space
+  flex-grow: 1
+
+#author
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  color: white
+  margin: 20px 20px 25px 20px
+
+  #name
+    margin: 10px 0
+    font-size: 16px
+
+  #desc
+    margin-bottom: 15px
+    opacity: 0.5
+
+  img
+    border-radius: 100%
+
+    @media mq-mobile
+      margin-left: 10px
+
+  @media mq-mobile
+    font-size: 13px
+    flex-direction: row
+    margin-bottom: 0
+    
+    #author-details
+      margin-left: 20px
+
+#incentive
+  opacity: 0.8
+  font-size: 15px
+  margin-bottom: 10px
+
+#ninja
+  margin-left: -30px
+
+.widget
+  @extend $base-style
+  line-height: line-height
+  word-wrap: break-word
+  font-size: 0.9em
+
+.category-list-count
+.tag-list-count
+.archive-list-count
+  padding-left: 5px
+  color: color-grey
+  font-size: 0.85em
+  &:before
+    content: "("
+  &:after
+    content: ")"
+
+.tagcloud
+  a
+    margin-right: 5px
+    display: inline-block

@@ -1,0 +1,33 @@
+<aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
+  <div id="gradient"></div>
+  <div id="sidebar-info">
+    <div id="incentive">Your place to learn Angular ecosystem and best practices.</br>Get the new articles, FIRST!</div>
+    <!-- <div class="bubble">
+      Get the new articles, FIRST! Be Ninja!
+    </div>
+    <img id="ninja" src="/assets/ninja.png" alt="ninja"> -->
+    <form class="subscription">
+      <input type="text" placeholder="Type in your Email">
+      <button class="cta-blue">I want them!</button>
+      <div class="consent">
+          By clicking the button you agree to receive email newsletter. NO SPAM!
+      </div>
+    </form>
+  </div>
+  <!-- Widgets -->
+  <!-- <% theme.widgets.forEach(function(widget){ %>
+    <%- partial('_widget/' + widget) %>
+  <% }) %> -->
+  <div id="space"></div>
+  <div id="author">
+    <img src="/assets/bartosz.jpg" alt="Author">
+    <div id="author-details">
+      <div id="name">Bartosz Pietrucha</div>
+      <div id="desc">Angular Academy founder, software consultant, trainer, international speaker</div>
+      <a href="https://twitter.com/pietrucha?ref_src=twsrc%5Etfw"class="twitter-follow-button" data-show-count="false" data-size="large">
+        Follow @pietrucha
+      </a>
+    </div>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</aside>

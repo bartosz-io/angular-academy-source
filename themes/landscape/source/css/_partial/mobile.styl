@@ -1,0 +1,24 @@
+#mobile-nav
+  top: 80px
+  z-index: 100
+  position: fixed
+  width: 100%
+  // height: 0
+  transform: scaleY(0)
+  transform-origin: top
+  overflow: hidden
+  background: color-header
+  transition: transform 0.2s ease-in
+
+  .mobile-nav-on &
+    transform: scaleY(1);
+
+.mobile-nav-link
+  display: block
+  color: color-grey
+  text-decoration: none
+  text-transform: uppercase
+  padding: 15px 20px
+  font-weight: bold
+  &:hover
+    color: #fff
