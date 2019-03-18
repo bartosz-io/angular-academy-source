@@ -33,4 +33,24 @@
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <% } %>
   <%- css('css/style') %>
+
+  <!-- MAUTIC SDK -->
+  <script type="text/javascript">
+    if (typeof MauticSDKLoaded == 'undefined') {
+        var MauticSDKLoaded = true;
+        var head            = document.getElementsByTagName('head')[0];
+        var script          = document.createElement('script');
+        script.type         = 'text/javascript';
+        script.src          = 'https://mautic.angular-academy.com/media/js/mautic-form.js';
+        script.onload       = function() {
+            MauticSDK.onLoad();
+        };
+        head.appendChild(script);
+        var MauticDomain = 'https://mautic.angular-academy.com';
+        var MauticLang   = {
+            'submittingMessage': "Please wait..."
+        }
+    }
+  </script>
+
 </head>

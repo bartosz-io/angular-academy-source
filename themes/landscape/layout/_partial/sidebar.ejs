@@ -1,30 +1,44 @@
-<aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
+<aside id="sidebar" <% if (theme.sidebar==='bottom' ){ %> class="outer"
+  <% } %>>
   <div id="gradient"></div>
   <div id="sidebar-info">
     <div id="incentive">Your place to learn Angular ecosystem and best practices.</br>Get the new articles, FIRST!</div>
-    <!-- <div class="bubble">
-      Get the new articles, FIRST! Be Ninja!
-    </div>
-    <img id="ninja" src="/assets/ninja.png" alt="ninja"> -->
-    <form class="subscription">
-      <input type="text" placeholder="Type in your Email">
-      <button class="cta-blue">I want them!</button>
-      <div class="consent">
-          By clicking the button you agree to receive email newsletter. NO SPAM!
+    <form class="subscription" autocomplete="false" role="form" method="post" action="https://mautic.angular-academy.com/form/submit?formId=4"
+      id="mauticform_angularacademyemaillistform" data-mautic-form="angularacademyemaillistform" enctype="multipart/form-data">
+      <div id="mauticform_angularacademyemaillistform_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-1 mauticform-required">
+        <input id="mauticform_input_angularacademyemaillistform_email" name="mauticform[email]" value="" class="mauticform-input"
+          type="email" placeholder="Type in your Email">
+        <span class="mauticform-errormsg" style="display: none;">This is required.</span>
       </div>
+
+      <div id="mauticform_angularacademyemaillistform_honey" style="display:none" class="mauticform-row mauticform-text mauticform-field-2">
+        <label id="mauticform_label_angularacademyemaillistform_honey" for="mauticform_input_angularacademyemaillistform_honey"
+          class="mauticform-label">Honey</label>
+        <input id="mauticform_input_angularacademyemaillistform_honey" name="mauticform[honey]" value="" class="mauticform-input"
+          type="text">
+        <span class="mauticform-errormsg" style="display: none;"></span>
+      </div>
+
+      <button type="submit" name="mauticform[submit]" id="mauticform_input_angularacademyemaillistform_submit" value=""
+        class="mauticform-button btn btn-default cta-blue">I want them!</button>
+
+      <div class="consent">
+        By clicking the button you agree to receive email newsletter. NO SPAM!
+      </div>
+
+      <input type="hidden" name="mauticform[formId]" id="mauticform_angularacademyemaillistform_id" value="4">
+      <input type="hidden" name="mauticform[return]" id="mauticform_angularacademyemaillistform_return" value="">
+      <input type="hidden" name="mauticform[formName]" id="mauticform_angularacademyemaillistform_name" value="angularacademyemaillistform">
     </form>
   </div>
-  <!-- Widgets -->
-  <!-- <% theme.widgets.forEach(function(widget){ %>
-    <%- partial('_widget/' + widget) %>
-  <% }) %> -->
   <div id="space"></div>
   <div id="author">
     <img src="/assets/bartosz.jpg" alt="Author">
     <div id="author-details">
       <div id="name">Bartosz Pietrucha</div>
       <div id="desc">Angular Academy founder, software consultant, trainer, international speaker</div>
-      <a href="https://twitter.com/pietrucha?ref_src=twsrc%5Etfw"class="twitter-follow-button" data-show-count="false" data-size="large">
+      <a href="https://twitter.com/pietrucha?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false"
+        data-size="large">
         Follow @pietrucha
       </a>
     </div>
