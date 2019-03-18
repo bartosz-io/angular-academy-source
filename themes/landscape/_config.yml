@@ -33,7 +33,7 @@ show_count: false
 # Miscellaneous
 google_analytics:
 gauges_analytics:
-favicon: /favicon.png
+favicon: /assets/favicon.png
 twitter:
 google_plus:
 fb_admins:
