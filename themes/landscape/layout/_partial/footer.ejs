@@ -2,21 +2,42 @@
   <div id="footer-subscription">
     <div id="transparent-bar"></div>
     <img id="footer-ninja" src="/assets/ninja-jump.png" alt="ninja">
-    <form class="subscription">
+    <form class="subscription" autocomplete="false" role="form" method="post" action="https://mautic.angular-academy.com/form/submit?formId=11"
+      id="mauticform_angularacademyemaillistform2" data-mautic-form="angularacademyemaillistform2" enctype="multipart/form-data">
       <div id="caption">Angular is going fast, stay up to date!</div>
-      <input type="text" placeholder="Your name">
-      <input type="text" placeholder="Your email">
-      <button class="cta-blue">Subscribe</button>
-      <div class="consent">
-          By clicking the button you agree to receive email newsletter. NO SPAM!
+      <div id="caption">Subscribe for new articles and videos!</div>
+      <div id="mauticform_angularacademyemaillistform2_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-1 mauticform-required">
+        <input id="mauticform_input_angularacademyemaillistform2_email" name="mauticform[email]" value="" class="mauticform-input"
+          type="email" placeholder="Type in your Email">
+        <span class="mauticform-errormsg" style="display: none;">This is required.</span>
       </div>
+
+      <div id="mauticform_angularacademyemaillistform2_honey" style="display:none" class="mauticform-row mauticform-text mauticform-field-2">
+        <label id="mauticform_label_angularacademyemaillistform2_honey" for="mauticform_input_angularacademyemaillistform2_honey"
+          class="mauticform-label">Honey</label>
+        <input id="mauticform_input_angularacademyemaillistform2_honey" name="mauticform[honey]" value="" class="mauticform-input"
+          type="text">
+        <span class="mauticform-errormsg" style="display: none;"></span>
+      </div>
+
+      <button type="submit" name="mauticform[submit]" id="mauticform_input_angularacademyemaillistform2_submit" value=""
+        class="mauticform-button btn btn-default cta-blue">Subscribe</button>
+
+      <div class="consent">
+        By clicking the button you agree to receive email newsletter. NO SPAM!
+      </div>
+      <input type="hidden" name="mauticform[formId]" id="mauticform_angularacademyemaillistform2_id" value="11">
+      <input type="hidden" name="mauticform[return]" id="mauticform_angularacademyemaillistform2_return" value="">
+      <input type="hidden" name="mauticform[formName]" id="mauticform_angularacademyemaillistform2_name" value="angularacademyemaillistform2">
     </form>
   </div>
   <% if (theme.sidebar === 'bottom'){ %>
-    <%- partial('_partial/sidebar') %>
+  <%- partial('_partial/sidebar') %>
   <% } %>
   <div id="footer-info">
-    <span>&copy; <%= date(new Date(), 'YYYY') %> <%= config.title %></span>
+    <span>&copy;
+      <%= date(new Date(), 'YYYY') %>
+      <%= config.title %></span>
     <span>Terms of use</span>
     <span>Privacy Policy</span>
   </div>
