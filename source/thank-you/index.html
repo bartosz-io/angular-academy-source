@@ -1,0 +1,121 @@
+<style>
+    .center {
+        text-align: center;
+    }
+
+    .wrapper {
+        margin: 10px auto !important;
+        text-align: center;
+        width: 380px;
+    }
+
+    .bubble {
+        font-size: 20px;
+        float: right;
+        margin-bottom: 20px;
+        padding: 15px;
+        position: relative;
+        color: #fff;
+        width: 210px;
+        height: 140px;
+        background: #ff0062;
+        border-radius: 10px;
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    }
+
+    .bubble:after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 15px 14px 0;
+        border-color: #ff0062 transparent;
+        display: block;
+        width: 0;
+        z-index: 1;
+        bottom: -15px;
+        left: 69px;
+    }
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: white;
+    }
+
+    .email {
+        margin-top: 20px !important;
+        border: solid 2px #ff0062;
+    }
+
+    .dashed {
+        font-weight: bold;
+        border-bottom: dashed 1px white;
+    }
+
+    .dashed-primary {
+        font-weight: bold;
+        border-bottom: dashed 2px #ff0062;
+    }
+
+    .line {
+        margin: 10px 0;
+    }
+
+    .large {
+        font-size: 35px;
+    }
+
+    .email_desktop {
+        font-size: 26px;
+    }
+
+    .email_mobile img {
+        width: 100%;
+    }
+
+    @media (min-width: 901px) {
+        .email_mobile {
+            display: none;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .wrapper {
+            width: 320px;
+            margin: 10px auto;
+        }
+
+        .email_desktop {
+            display: none;
+        }
+    }
+</style>
+
+<div class="wrapper">
+    <div class="bubble">
+        <div class="line">
+            Hey! We are sending you the email!
+        </div>
+        <div class="line">
+            Check you inbox within
+            <span class="dashed">1 minute!</span>
+        </div>
+    </div>
+    <img src="./ninja-computer.png">
+</div>
+
+<div class="center">
+    <div class="email_desktop">
+        <div>
+            Let's take our relationship to the next level!
+        </div>
+        <div class="large">
+            Move us to your <span class="dashed-primary">Primary Inbox!</span>
+        </div>
+        <img class="email" src="./email.gif">
+    </div>
+    <div class="email_mobile">
+        <img src="./email_mobile.jpg">
+    </div>
+</div>
