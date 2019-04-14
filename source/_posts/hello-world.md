@@ -1,6 +1,6 @@
 ---
 title: Hello World
-category: Test
+tags: [Test, Test3]
 author: Bartosz Pietrucha
 avatar: bartosz.jpg
 date: 2019-11-06

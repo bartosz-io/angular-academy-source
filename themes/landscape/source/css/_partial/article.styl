@@ -3,7 +3,7 @@
   width: 100%
 
   @media mq-mobile-and-tablet
-    margin: block-margin 0
+    margin: margin-block 0
 
 .article-meta
   margin: 20px 0
@@ -22,16 +22,16 @@
   &:before
       padding-right: 4px
       content: "\2022"
+  &:after
+      padding-left: 4px
+      content: "\2022"
 
-.article-category
+.article-tag-list
   display: inline
   padding-left: 5px
   white-space: nowrap
-  &:before
-    content: "\2022"
-    padding-right: 2px
 
-.article-category-link
+.article-tag-list-link
   color: black
 
 .article-avatar

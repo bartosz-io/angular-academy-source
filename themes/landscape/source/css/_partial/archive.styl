@@ -1,5 +1,26 @@
-.archives-wrap:first-child
-  margin: block-margin 0 0 0
+.tag-list
+  margin: 30px 0 20px 0
+  justify-content: center
+  display: flex
+
+  .tag-list-item
+    margin: 0 10px
+
+    .tag-list-link
+      text-decoration: none
+      color: color-default
+
+.category-list-count
+.tag-list-count
+.archive-list-count
+  display: none
+  padding-left: 5px
+  color: color-grey
+  font-size: 0.85em
+  &:before
+    content: "("
+  &:after
+    content: ")"
 
 .archives
   clearfix()
