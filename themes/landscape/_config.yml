@@ -2,7 +2,6 @@
 menu:
   Blog: /
   Workshops: /workshops
-  About: /about
 highlighted:
   Hire me: /hire
 rss: /atom.xml
