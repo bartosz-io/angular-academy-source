@@ -1,0 +1,253 @@
+.workshops-agenda
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 20px
+    margin-top: 30px
+
+    @media mq-mobile
+        grid-template-columns: 1fr
+
+    &-item
+        padding-left: 20px
+        border-radius: 5px
+        border: 1px solid color-border
+        background-color: rgba(0, 0, 0, 0.1)
+
+    ul
+        margin: 1em
+
+    p
+        margin: 1em 0
+
+.workshop-reference
+    margin: 40px 0
+    padding: 20px 30px
+    background: color-primary
+    border-radius: 10px
+    display: flex
+    color: white
+
+    @media mq-mobile
+        flex-direction: column
+        padding: 15px
+
+    .fancybox
+        flex-shrink: 0
+        margin: auto
+
+    .avatar
+        border-radius: 100%
+        width: 100px
+        height: 100px
+
+        @media mq-mobile
+            margin-bottom: 10px
+
+    .text
+        margin: auto
+        text-align: justify
+        padding-left: 20px
+        font-size: 14px
+
+        @media mq-mobile
+            padding: 0
+
+        .author
+            font-size: 0.9em
+            margin-top: 5px
+            color: rgba(255, 255, 255, 0.8)
+            font-style: italic
+
+img.workshop-app
+    margin: 30px auto
+
+.workshop-gallery
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    gap: 20px
+
+    img
+        border-radius: 5px
+
+.workshop-video
+    margin: 20px 0
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+.workshop-book
+    background: color-secondary
+    padding: 10px 20px
+    font-size: 1.2em
+    color: black
+    position: fixed
+    bottom: 0
+    right: 20px
+    display: block
+    cursor: pointer
+    border-radius: 10px 10px 0 0
+    z-index: 10000
+
+    .button-text:hover
+        color: rgba(0,0,0,0.5)
+
+    .close
+        position: absolute
+        font-size: 30px
+        right: 15px
+        top: 2px
+        display: none
+
+    @media mq-mobile
+        margin-bottom: 20px
+        left: 0
+        border-radius: 0
+        position: sticky
+        .button-text
+            text-align: center
+
+    #mauticform_wrapper_angularacademyhireus {
+        display: none;    
+    }
+
+    .mauticform_wrapper {
+        max-width: 600px;
+        margin: 10px auto;
+        color: #6f6f6f;
+        font-weight: 400;
+        font-family: 'Source Sans Pro', 'Helvetica Neue', 'Arial', 'sans-serif';
+        font-size: 18px;
+    }
+
+    .mauticform-innerform {}
+
+    .mauticform-post-success {}
+
+    .mauticform-name {
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 3px;
+    }
+
+    .mauticform-description {
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+
+    .mauticform-error {
+        margin-bottom: 10px;
+        color: red;
+    }
+
+    .mauticform-message {
+        margin-bottom: 10px;
+        color: green;
+    }
+
+    .mauticform-row {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .mauticform-label {
+        font-size: 1.1em;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: black;
+    }
+
+    .mauticform-row.mauticform-required .mauticform-label:after {
+        color: #e32;
+        content: " *";
+        display: inline;
+    }
+
+    .mauticform-helpmessage {
+        display: block;
+        font-size: 0.9em;
+        margin-bottom: 3px;
+    }
+
+    .mauticform-errormsg {
+        display: block;
+        color: red;
+        margin-top: 2px;
+    }
+
+    .mauticform-selectbox,
+    .mauticform-input,
+    .mauticform-textarea {
+        width: 100%;
+        padding: 0.5em 0.5em;
+        border: 0;
+        border-bottom: 1px solid #21c5ba;
+        background: #fff;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    .mauticform-checkboxgrp-row {}
+
+    .mauticform-checkboxgrp-label {
+        font-weight: normal;
+    }
+
+    .mauticform-checkboxgrp-checkbox {}
+
+    .mauticform-radiogrp-row {}
+
+    .mauticform-radiogrp-label {
+        font-weight: normal;
+    }
+
+    .mauticform-radiogrp-radio {}
+
+    .mauticform-button-wrapper {
+        text-align: center;    
+    }
+
+    .mauticform-button-wrapper .mauticform-button.btn-default {
+        color: #21c5ba;
+        background-color: #ffffff;
+        border-color: #21c5ba;
+    }
+
+    .mauticform-button-wrapper .mauticform-button {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 600;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 18px;
+        line-height: 1.3856;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .mauticform-button-wrapper .mauticform-button.btn-default[disabled] {
+        background-color: #ffffff;
+        border-color: #dddddd;
+    }
