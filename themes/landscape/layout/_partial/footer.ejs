@@ -1,7 +1,7 @@
 <footer id="footer">
   <div id="footer-subscription">
     <div id="transparent-bar"></div>
-    <img id="footer-ninja" src="/assets/ninja-jump.png" alt="ninja">
+    <img id="footer-ninja" src="<%- url_for('assets') %>/ninja-jump.png" alt="ninja">
     <form class="subscription" autocomplete="false" role="form" method="post" action="https://mautic.angular-academy.com/form/submit?formId=11"
       id="mauticform_angularacademyemaillistform2" data-mautic-form="angularacademyemaillistform2" enctype="multipart/form-data">
       <div id="caption">Angular is going fast, stay up to date!</div>
@@ -38,7 +38,7 @@
     <span>&copy;
       <%= date(new Date(), 'YYYY') %>
       <%= config.title %></span>
-    <a href="/terms">Terms and Conditions</a>
-    <a href="/privacy">Privacy Policy</a>
+    <a href="<%- url_for('terms') %>">Terms and Conditions</a>
+    <a href="<%- url_for('privacy') %>">Privacy Policy</a>
   </div>
 </footer>

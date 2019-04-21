@@ -7,7 +7,7 @@
       </header>
     <% } %>
     <div class="article-meta">
-      <img src="/assets/<%- post.avatar %>" class="article-avatar" alt="avatar">
+      <img src="<%- url_for('assets') %>/<%- post.avatar %>" class="article-avatar" alt="avatar">
       <div class="article-author">
         <%- post.author %>
       </div>
