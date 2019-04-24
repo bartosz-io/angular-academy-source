@@ -18,6 +18,9 @@ root: /
 permalink: :title/
 permalink_defaults:
 
+# Disqus
+disqus_shortname: angular-academy-1
+
 # Directory
 source_dir: source
 public_dir: public
