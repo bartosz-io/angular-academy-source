@@ -18,6 +18,13 @@ root: /
 permalink: :title/
 permalink_defaults:
 
+# Hexo-toc
+toc:
+  maxdepth: 3
+  class: toc
+  slugify: transliteration
+  decodeEntities: false
+
 # Disqus
 disqus_shortname: angular-academy-1
 
