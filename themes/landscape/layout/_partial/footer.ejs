@@ -34,7 +34,7 @@
   <% if (theme.sidebar === 'bottom'){ %>
   <%- partial('_partial/sidebar') %>
   <% } %>
-  <div id="footer-info">
+  <div id="footer-info"<% if (is_post()) {  %> class="post-footer"<% } %>>
     <span>&copy;
       <%= date(new Date(), 'YYYY') %>
       <%= config.title %></span>
