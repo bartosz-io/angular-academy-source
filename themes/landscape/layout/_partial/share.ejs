@@ -6,6 +6,10 @@
     <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<%- url %>">
         <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
     </a>
+    <a class="bubble" href="#disqus_thread">
+        <svg class="icon icon-bubble"><use xlink:href="#icon-bubble"></use></svg>
+        <a class="comment-count" href="#disqus_thread" data-disqus-identifier="<%= page.permalink %>"></a>
+    </a>
 </div>
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -16,6 +20,10 @@
     <symbol id="icon-facebook" viewBox="0 0 32 32">
         <title>facebook</title>
         <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+    </symbol>
+    <symbol id="icon-bubble" viewBox="0 0 32 32">
+        <title>bubble</title>
+        <path d="M16 2c8.837 0 16 5.82 16 13s-7.163 13-16 13c-0.849 0-1.682-0.054-2.495-0.158-3.437 3.437-7.539 4.053-11.505 4.144v-0.841c2.142-1.049 4-2.961 4-5.145 0-0.305-0.024-0.604-0.068-0.897-3.619-2.383-5.932-6.024-5.932-10.103 0-7.18 7.163-13 16-13z"></path>
     </symbol>
 </svg>
 
