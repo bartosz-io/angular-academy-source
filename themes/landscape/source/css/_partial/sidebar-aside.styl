@@ -5,11 +5,11 @@
   flex-direction: column
   z-index: 1000
 
-  @media mq-normal
-    height: "calc(100% - %s)" % header-height
+  @media mq-large
+    height: 100%
     width: sidebar-width
-    top: header-height
-    position: fixed
+    top: 60px
+    position: relative
     padding-bottom: 20px
 
 .widget-wrap

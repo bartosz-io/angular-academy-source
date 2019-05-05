@@ -56,28 +56,14 @@ body
   position: relative
 
 #wrap
-  height: 100%
-  width: 100%
-  position: absolute
-  top: 0
-  left: 0
-  transition: 0.2s ease-out
-  z-index: 1
-  background: color-background-light
+  justify-content: center;
 
-  @media mq-normal
+  @media mq-large
     display: flex
-    flex-direction: column
+    flex-direction: row-reverse
 
 #content
-  flex-grow: 1
-
-  @media mq-mobile-and-tablet
-    margin-top: 80px
-
-  @media mq-normal
-    margin-top: header-height
-    margin-left: sidebar-width
+  min-width: 0;
 
 #main
   column(columns)

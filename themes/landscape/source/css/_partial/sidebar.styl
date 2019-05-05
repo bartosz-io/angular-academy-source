@@ -8,7 +8,7 @@ else
   width: sidebar-width
   background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 100%)
 
-  @media mq-mobile-and-tablet
+  @media mq-not-large
     width: 100%
 
 #sidebar-info
@@ -16,11 +16,12 @@ else
   color: white
   font-size: 15px
 
-  @media mq-mobile-and-tablet
+  @media mq-not-large
     display: none
 
 #space
-  flex-grow: 1
+  @media mq-large
+    height: 50px
 
 #author
   display: flex
