@@ -3,7 +3,7 @@ menu:
   Blog: /
   Workshops: /workshops
 highlighted:
-  Hire me: /hire
+  # Hire me: /hire
 rss: /atom.xml
 
 # Content
