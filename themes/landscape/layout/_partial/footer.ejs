@@ -2,44 +2,33 @@
   <div id="footer-subscription">
     <div id="transparent-bar"></div>
     <img id="footer-ninja" src="<%- url_for('assets') %>/ninja-jump.png" alt="ninja">
-    <form class="subscription" autocomplete="false" role="form" method="post" action="https://mautic.angular-academy.com/form/submit?formId=11"
-      id="mauticform_angularacademyemaillistform2" data-mautic-form="angularacademyemaillistform2" enctype="multipart/form-data">
-      <div id="caption">Angular is going fast, stay up to date!</div>
-      <div id="caption">Subscribe for new articles and videos!</div>
-      <div id="mauticform_angularacademyemaillistform2_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-1 mauticform-required">
-        <input id="mauticform_input_angularacademyemaillistform2_email" name="mauticform[email]" value="" class="mauticform-input"
-          type="email" placeholder="Type in your Email">
-        <span class="mauticform-errormsg" style="display: none;">This is required.</span>
-      </div>
-
-      <div id="mauticform_angularacademyemaillistform2_2__2" data-validate="2__2" data-validation-type="captcha" class="mauticform-row mauticform-text mauticform-field-2 mauticform-required">
-        <input id="mauticform_input_angularacademyemaillistform2_2__2" name="mauticform[2__2]" value="" placeholder="How much is 2 + 2 ?" class="mauticform-input" type="text">
-        <span class="mauticform-errormsg" style="display: none;">This is required.</span>
-      </div>
-
-      <div id="mauticform_angularacademyemaillistform2_honey" style="display:none" class="mauticform-row mauticform-text mauticform-field-2">
-        <label id="mauticform_label_angularacademyemaillistform2_honey" for="mauticform_input_angularacademyemaillistform2_honey"
-          class="mauticform-label">Honey</label>
-        <input id="mauticform_input_angularacademyemaillistform2_honey" name="mauticform[honey]" value="" class="mauticform-input"
-          type="text">
-        <span class="mauticform-errormsg" style="display: none;"></span>
-      </div>
-
-      <button type="submit" name="mauticform[submit]" id="mauticform_input_angularacademyemaillistform2_submit" value=""
-        class="mauticform-button btn btn-default cta-blue">Subscribe</button>
-
-      <div class="consent">
-        By clicking the button you agree to receive email newsletter. NO SPAM!
-      </div>
-      <input type="hidden" name="mauticform[formId]" id="mauticform_angularacademyemaillistform2_id" value="11">
-      <input type="hidden" name="mauticform[return]" id="mauticform_angularacademyemaillistform2_return" value="">
-      <input type="hidden" name="mauticform[formName]" id="mauticform_angularacademyemaillistform2_name" value="angularacademyemaillistform2">
-    </form>
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form action="https://gmail.us20.list-manage.com/subscribe/post?u=3116a981a5071d60dd4762f63&amp;id=e1d22d4bc5"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscription">
+        <div id="mc_embed_signup_scroll">
+          <div id="caption">Subscribe for new articles and videos!</div>
+          <div class="mc-field-group">
+            <input type="email" placeholder="Email Address" value="" name="EMAIL" class="required" id="mce-EMAIL"
+              required>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+              name="b_3116a981a5071d60dd4762f63_e1d22d4bc5" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="I WANT THEM" name="subscribe" id="mc-embedded-subscribe"
+              class="button cta-blue"></div>
+          <div class="consent">
+            By clicking the button you agree to receive email newsletter. NO SPAM!
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--End mc_embed_signup-->
   </div>
   <% if (theme.sidebar === 'bottom'){ %>
   <%- partial('_partial/sidebar') %>
   <% } %>
-  <div id="footer-info"<% if (is_post()) {  %> class="post-footer"<% } %>>
+  <div id="footer-info" <% if (is_post()) {  %> class="post-footer" <% } %>>
     <span>&copy;
       <%= date(new Date(), 'YYYY') %>
       <%= config.title %></span>
