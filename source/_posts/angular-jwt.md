@@ -1,5 +1,5 @@
 ---
-title: Angular JWT Authorization with Refresh Token
+title: Angular JWT Authorization with Refresh Token and Http Interceptor
 tags: [Angular, Security]
 author: Bartosz Pietrucha
 avatar: bartosz.jpg
