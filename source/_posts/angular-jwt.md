@@ -1,5 +1,5 @@
 ---
-title: Angular JWT Authorization
+title: Angular JWT Authorization with Refresh Token
 tags: [Angular, Security]
 author: Bartosz Pietrucha
 avatar: bartosz.jpg
