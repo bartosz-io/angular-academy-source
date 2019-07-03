@@ -35,7 +35,7 @@ One of the solutions to the problems described above is solid system architectur
 
 To discuss architecture best practices and patterns, we need to answer a question, what the software architecture is, in the first place. [Martin Fowler](https://martinfowler.com/) defines architecture as "*highest-level breakdown of a system into its parts*". On top of that, I would say that software architecture describes how the software is composed of its parts and what are the *rules* and *constraints* of the communication between those parts. Usually, the architectural decisions that we make in our system development, are hard to change as the system grows over time. That's why it is very important to pay attention to those decisions from the very beginning of our project, especially if the software we build is supposed to be running in production for many years. [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) once said: the true cost of software is its maintenance. Having well-grounded architecture helps to reduce the costs of the system's maintenance.
 
-> **Software architecture** is the way the software is composed of its parts and what are the *rules* and *constraints* of the communication between those parts
+> **Software architecture** is the way the software is composed of its parts and the *rules* and *constraints* of the communication between those parts
 
 ## High-level abstraction layers
 
