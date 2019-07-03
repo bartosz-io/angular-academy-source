@@ -143,7 +143,7 @@ export class SettingsFacade {
 
 We already know the main responsibilities for this layer; to expose streams of state and interface for the components. Let's start with the interface. Public methods `loadCashflowCategories()`, `addCashflowCategory()` and `updateCashflowCategory()` abstract away the details of state management and the external API calls from the components. We are not using API providers (like `CashflowCategoryApi`) in components directly, as they live in the core layer. Also, how the state changes are not a concern of the components. The presentation layer should not care about **how** things are done and components should **just call** the methods from the abstraction layer when necessary (delegate). Looking at the public methods in our abstraction layer should give us a quick insight about **high-level use cases** in this part of the system.
 
-But remember, the abstraction layer is not a place to implement business logic. Here we just want to *connect* the presentation layer to our business logic, abstracting *the way* it is connected.
+But we should remember that the abstraction layer is not a place to implement business logic. Here we just want to *connect* the presentation layer to our business logic, abstracting *the way* it is connected.
 
 #### State
 
