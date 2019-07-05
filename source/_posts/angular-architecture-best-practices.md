@@ -201,6 +201,8 @@ To sum up, what we can do in the abstraction layer is to:
 
 As we see, the abstraction layer plays an important role in our layered architecture. It has clearly defined responsibilities what helps to better understand and reason about the system. Depending on your particular case, you can create one facade per Angular module or one per each entity. For example, the `SettingsModule` may have single `SettingsFacade`, if it's not too bloated. But sometimes it may be better to create more-granular abstraction facades for each entity individually, like `UserFacade` for `User` entity.
 
+{% asset_img "consulting.png" "Consulting" %}
+
 ### Core layer
 
 The last layer is the core layer. Here is where core application logic is implemented. All **data manipulation** and **outside world communication** happen here. If for state management, we were using a solution like NgRx, here is a place to put our state definition, actions and reducers. Since in our examples we are modeling state with BehaviorSubjects, we can encapsulate it in a convenient state class. Below, you can find `SettingsState` example from the core layer.
@@ -282,8 +284,6 @@ export class CashflowCategoryApi {
 In this layer, we could also place any validators, mappers or more advanced use-cases that require manipulating many slices of our UI state.
 
 We have covered the topic of the abstraction layers in our frontend application. Every layer has it's well-defined boundaries and responsibilities. We also defined the strict rules of communication between layers. This all helps to better understand and reason about the system over time as it becomes more and more complex.
-
-{% asset_img "consulting.png" "Consulting" %}
 
 ## Unidirectional data flow and reactive state management
 
