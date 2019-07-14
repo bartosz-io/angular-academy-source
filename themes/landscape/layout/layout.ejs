@@ -1,16 +1,22 @@
 <%- partial('_partial/head') %>
 <body>
   <div id="container">
-    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
     <div id="wrap">
+      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
       <div id="content">
+        <div id="slack">
+          <img src="<%- url_for('assets') %>/slack.png" alt="slack">
+          <span id="join-slack">Join our <span class="bold">Slack</span> community! Exchange knowledge, ask questions, get feedback!</span>
+          <span id="join-slack-short">Join our <span class="bold">Slack</span> community!</span>
+          <a class="slack-link" target="_blank" href="https://join.slack.com/t/angular-academy/shared_invite/enQtNDY1MjczMDA3ODEzLWQ4MTc5YjY1ZTkyOTIxMzE0Yzc0NTIzOGRjZjI1OWQ5Nzk1MmJhZTgyNThmNTJjMGExZGNkMDY1M2U4OTc4YTA">Join Slack</a>
+        </div>
         <div class="outer">
             <section id="main"><%- body %></section>
           </div>
       </div>
       <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
     </div>
-    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
     <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
     <%- partial('_partial/after-footer') %>
   </div>

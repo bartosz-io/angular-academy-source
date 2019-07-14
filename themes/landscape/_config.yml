@@ -1,8 +1,8 @@
 # Header
 menu:
   Blog: /
-  Workshops: /workshops
 highlighted:
+  Workshops: /workshops
   # Hire me: /hire
 rss: /atom.xml
 

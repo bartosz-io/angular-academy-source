@@ -1,11 +1,5 @@
 <div class="article-wrapper">
     <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-      <div id="slack">
-        <img src="<%- url_for('assets') %>/slack.png" alt="slack">
-        <span id="join-slack">Join our <span class="bold">Slack</span> community! Exchange knowledge, ask questions, get feedback!</span>
-        <span id="join-slack-short">Join our <span class="bold">Slack</span> community!</span>
-        <a class="slack-link" target="_blank" href="https://join.slack.com/t/angular-academy/shared_invite/enQtNDY1MjczMDA3ODEzLWQ4MTc5YjY1ZTkyOTIxMzE0Yzc0NTIzOGRjZjI1OWQ5Nzk1MmJhZTgyNThmNTJjMGExZGNkMDY1M2U4OTc4YTA">Join Slack</a>
-      </div>
       <div class="article-inner">
         <%- partial('post/gallery') %>
         <% if (post.link || post.title){ %>

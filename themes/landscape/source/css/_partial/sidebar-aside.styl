@@ -1,20 +1,17 @@
 #sidebar
   background-color: color-sidebar
-  padding-top: 30px
+  padding-top: 0px
   padding-bottom: 0px
   display: flex
   flex-direction: column
   z-index: 1000
 
-  @media mq-large
-    height: 100%
+  @media mq-normal
+    height: "calc(100% - %s)" % header-height
     width: sidebar-width
-    top: 120px
-    position: sticky
-    margin-top: 40px
-    margin-bottom: 40px
-    margin-left: 20px
-    border-radius: 10px
+    top: header-height
+    position: fixed
+    padding-bottom: 20px
 
 .widget-wrap
   padding: 20px
