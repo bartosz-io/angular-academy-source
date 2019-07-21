@@ -40,6 +40,10 @@ body
   @media mq-mobile
     padding: 0
 
+  &.home
+    padding: 0
+    max-width: unset
+
 .inner
   column(columns)
 
@@ -78,6 +82,9 @@ body
   @media mq-normal
     margin-top: header-height
     margin-left: sidebar-width
+    
+    .home &
+      margin-left: 0
 
 #main
   column(columns)
@@ -86,6 +93,7 @@ body
     flex-direction: column
 
 @import "_extend"
+@import "_partial/index"
 @import "_partial/header"
 @import "_partial/article"
 @import "_partial/comment"

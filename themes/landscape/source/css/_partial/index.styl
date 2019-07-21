@@ -1,0 +1,244 @@
+.top
+  position: relative
+
+  .start
+    width: 100%
+    max-width: 1220px
+    margin: auto
+    display: block
+
+  .bg
+    width: 100%
+    max-height: 686px
+    filter: blur(2vw)
+    position: absolute
+    z-index: -10
+    top: 0
+
+  .intro
+    color: white
+    position: absolute
+    left: 50%
+    top: 54%
+    width: 41%
+    max-width: 500px
+    height: 300px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    @media mq-not-large
+      height: 45%
+
+    .text
+      font-size: 34px
+      text-align: center
+
+      @media mq-not-large
+        font-size: 3vw
+
+    .subtext
+      font-size: 22px
+      margin: 30px 12px
+      text-align: center
+
+      @media mq-not-large
+        font-size: 2.5vw
+        margin: 5% 0
+
+.featured
+  background-color: color-background-dark
+  padding: 40px 0
+  text-align: center
+
+  @media mq-mobile
+    padding: 20px 0
+
+  img
+    height: 50px
+    margin: 25px
+
+    @media mq-mobile-and-tablet {
+      height: 30px
+      margin: 15px
+    }
+
+.main-text
+  text-align: center
+  font-weight: bold
+  font-size: 2em
+  padding: 60px 10px
+
+.main-columns
+  display: flex
+  max-width 1220px
+  margin: auto
+
+  img
+    width: 50%
+    margin-right: 20px
+
+  div
+    padding: 20px
+    width: 50%
+    box-sizing: border-box
+    font-size: 24px
+    line-height: 1.5
+  
+  @media mq-mobile-and-tablet
+    flex-direction: column-reverse
+
+    img
+      width: 100%
+
+    div
+      width: 100%
+      font-size: 18px
+      padding-top: 0
+
+.talks
+  margin: 40px auto
+  max-width: 1220px
+
+  .title
+    text-align: center
+    margin: 34px
+    font-size: 24px
+
+  .row
+    display: flex
+    justify-content: space-between
+
+    @media mq-mobile
+      flex-direction: column
+
+    .embed-container
+      position: relative; 
+      padding-bottom: 18%; 
+      width: 32%
+
+      @media mq-mobile
+        width: 100%
+        padding-bottom: 56.25%
+        margin-bottom: 25px
+    
+    .embed-container iframe, .embed-container object, .embed-container embed { 
+      position: absolute; top: 0; 
+      width: 100%;
+      height: 100%;
+    }
+
+  img
+    margin-top: 20px
+    width: 100%
+
+    @media mq-mobile
+      margin-top: 0
+
+.recommendation-bar
+  background-color: color-background-dark
+  padding: 40px 0
+  margin-top: 40px
+  color: white
+
+  @media mq-mobile-and-tablet
+    padding: 20px 0
+
+  .recommendation
+    max-width: 1220px
+    margin: auto
+    padding: 20px 30px
+    border-radius: 10px
+    color: white
+    display: flex
+
+    @media mq-mobile-and-tablet
+      flex-direction: column
+      padding: 15px
+
+    .fancybox
+      flex-shrink: 0
+      margin: auto
+
+    .avatar
+      border-radius: 100%
+      width: 150px
+      height: 150px
+
+      @media mq-mobile-and-tablet
+        margin: 10px auto
+
+    .text
+      margin: auto
+      text-align: justify
+      padding-left: 40px
+      font-size: 20px
+      line-height: 1.5
+
+      @media mq-mobile-and-tablet
+        padding: 20px 0 0 0
+        font-size: 16px
+
+      .author
+        font-size: 0.7em
+        margin-top: 10px
+        color: rgba(255, 255, 255, 0.8)
+        font-style: italic
+
+.stack
+  margin: 40px auto
+  max-width: 1220px
+
+  .title
+    text-align: center
+    margin: 34px
+    font-size: 24px
+
+  .logos
+    text-align: center
+
+    img
+      width: 120px
+      height: 120px
+      margin: 10px
+
+      @media mq-mobile-and-tablet
+        width: 100px
+        height: 100px
+
+.courses
+  background-color: color-background-dark
+  padding: 40px 0
+  text-align: center
+  color: white
+
+.offer
+  max-width: 1220px
+  margin: 34px auto
+
+  .title
+    margin-bottom: 34px
+    font-size: 24px
+    text-align: center
+
+  ul
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin: 20px
+
+    @media mq-mobile-and-tablet
+      flex-direction: column
+      align-items: center
+
+      li:not(:last-child) div
+        margin-bottom: 50px
+
+    li
+      font-size: 18px
+      font-weight: bold
+      text-align: center
+
+      img
+        width: 200px
+        margin-bottom: 10px
