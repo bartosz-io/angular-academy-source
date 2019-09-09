@@ -58,3 +58,19 @@
 
   @media mq-not-large
     background-color: color-background-dark
+
+#footer-fixed-button
+  display: none
+  position: fixed
+  bottom: 0
+  text-align: center
+  width: 100%
+  height: 40px
+  line-height: 40px
+  cursor: pointer
+  color: white
+  background: color-primary
+
+  @media mq-mobile-and-tablet
+    &.show
+      display: block
