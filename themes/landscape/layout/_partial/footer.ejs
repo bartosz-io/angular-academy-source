@@ -28,12 +28,11 @@
   <% if (theme.sidebar === 'bottom'){ %>
   <%- partial('_partial/sidebar') %>
   <% } %>
-  <div id="footer-info" <% if (is_post()) { %> class="post-footer" <% } %>>
+  <div id="footer-info">
     <span>&copy;
       <%= date(new Date(), 'YYYY') %>
       <%= config.title %></span>
     <a href="<%- url_for('terms') %>">Terms and Conditions</a>
     <a href="<%- url_for('privacy') %>">Privacy Policy</a>
   </div>
-  <div id="footer-fixed-button" <% if (is_post()) { %> class="show" <% } %> onclick="window.scrollTo(0, window.document.body.scrollHeight);">Subscribe for new articles</div>
 </footer>
