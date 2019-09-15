@@ -72,7 +72,7 @@ fromEvent(saveBtn, 'click')
 
 ### ConcatMap
 
-We have already asked a question about the scenario when outer stream emits an event (i.e. user clicks the button) **before** the outer stream finishes its execution. One of the strategies to handle this case is to wait until that inner stream completes before subscribing to the next one. This is exactly what we `concatMap()` will do for us. Take a look at the recorded demo below.
+We have already asked a question about the scenario when outer stream emits an event (i.e. user clicks the button) **before** the inner stream finishes its execution. One of the strategies to handle this case is to wait until that inner stream completes before subscribing to the next one. This is exactly what we `concatMap()` will do for us. Take a look at the recorded demo below.
 
 {% asset_img "concatMap.gif" "ConcatMap example" %}
 
