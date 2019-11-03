@@ -1,8 +1,9 @@
 # Header
 menu:
   Blog: /blog
-highlighted:
   Workshops: /workshops
+highlighted:
+  YouTube: https://www.youtube.com/c/AngularAcademy
   # Hire me: /hire
 rss: /atom.xml
 
