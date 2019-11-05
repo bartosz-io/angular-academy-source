@@ -3,7 +3,7 @@ menu:
   Blog: /blog
   Workshops: /workshops
 highlighted:
-  YouTube: https://www.youtube.com/c/AngularAcademy
+  Videos: https://www.youtube.com/c/AngularAcademy
   # Hire me: /hire
 rss: /atom.xml
 
