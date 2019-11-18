@@ -1,0 +1,38 @@
+.wide-subscription-wrapper
+  @media mq-normal
+    margin-left: sidebar-width
+
+    .no-margin-left &
+      margin-left: 0
+
+  background-color: color-primary
+
+.wide-subscription
+  margin: auto
+  max-width: 800px
+  background-color: color-primary
+  display: flex
+
+  form
+    padding: 75px 20px 0 0
+    color: white
+
+.transparent-bar
+  height: 50px
+  width: 100%
+  left: 0
+  position: absolute
+  background-color: color-background-light
+
+  @media mq-not-large
+    background-color: color-background-dark
+
+.wide-subscription-ninja
+  width: 50%
+  object-fit: contain
+  z-index: 1000
+
+  @media mq-mobile
+    margin-top: 25px
+
+

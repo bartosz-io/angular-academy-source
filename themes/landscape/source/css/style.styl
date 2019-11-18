@@ -76,6 +76,9 @@ body
 #content
   flex-grow: 1
 
+  &.no-margin-top
+    margin-top: 0
+
   @media mq-mobile-and-tablet
     margin-top: 80px
 
@@ -83,7 +86,7 @@ body
     margin-top: header-height
     margin-left: sidebar-width
     
-    .home &
+    .no-margin-left &
       margin-left: 0
 
 #main
@@ -104,6 +107,7 @@ body
 @import "_partial/forms"
 @import "_partial/share"
 @import "_partial/workshops"
+@import "_partial/subscription"
 
 if sidebar
   @import "_partial/sidebar"

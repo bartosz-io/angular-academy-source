@@ -1,32 +1,12 @@
 #footer
-  background: color-primary
-  color: color-grey
-
-  a
-    color: color-link
-    text-decoration: none
-    &:hover
-      text-decoration: underline
-
-  form
-    padding: 75px 20px 0 0
-    color: white
-
   @media mq-normal
     margin-left: sidebar-width
 
-    .home &
+    .no-margin-left &
       margin-left: 0
 
-#footer-ninja
-  width: 50%
-  object-fit: contain
-  z-index: 1000
-
-  @media mq-mobile
-    margin-top: 25px
-
 #footer-info
+  color: color-grey
   padding: 20px
   background-color: color-background-dark
   text-align: center
@@ -40,18 +20,8 @@
   span
     margin-left: 5px
 
-#footer-subscription
-  margin: auto
-  max-width: 800px
-  background-color: color-primary
-  display: flex
-
-#transparent-bar
-  height: 50px
-  width: 100%
-  left: 0
-  position: absolute
-  background-color: color-background-light
-
-  @media mq-not-large
-    background-color: color-background-dark
+  a
+    color: color-link
+    text-decoration: none
+    &:hover
+      text-decoration: underline

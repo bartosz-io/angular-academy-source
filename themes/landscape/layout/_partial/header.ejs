@@ -1,4 +1,4 @@
-<header id="header">
+<header id="header"<% if (scrollable) { %> class="scrollable"<% } %>>
     <div id="header-title">
       <a href="<%- url_for('/') %>"><img src="<%- url_for('assets') %>/logo.png" alt="logo" id="logo-image"></a>
       <a href="<%- url_for('/') %>"><img src="<%- url_for('assets') %>/logo-mobile.png" alt="logo" id="logo-image-mobile"></a>

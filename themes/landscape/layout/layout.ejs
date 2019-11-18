@@ -2,10 +2,10 @@
 <body>
   <div id="container">
     <div id="wrap">
-    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-    <div id="wrap" <% if (is_home()) { %> class="home" <% } %>>
+    <%- partial('_partial/header', {scrollable: page.source === 'security/index.html'}, {cache: !config.relative_link}) %>
+    <div id="wrap" <% if (is_home() || page.source === 'security/index.html') { %> class="no-margin-left" <% } %>>
       <div id="content">
-        <% if (!is_home()) { %>
+        <% if (!(is_home() || page.source === 'security/index.html')) { %>
           <div id="slack">
             <img src="<%- url_for('assets') %>/slack.png" alt="slack">
             <span id="join-slack">Join our <span class="bold">Slack</span> community! Exchange knowledge, ask questions, get feedback!</span>
@@ -17,8 +17,11 @@
             <section><%- body %></section>
           </div>
       </div>
-      <% if (!is_home()) { %>
+      <% if (!(is_home() || page.source === 'security/index.html')) { %>
         <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+      <% } %>
+      <% if (!(page.source === 'security/index.html')) { %>
+        <%- partial('_partial/subscription', null, {cache: !config.relative_link}) %>
       <% } %>
       <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
     </div>
