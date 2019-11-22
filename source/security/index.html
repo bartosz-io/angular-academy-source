@@ -127,6 +127,11 @@
     flex: 2;
   }
 
+  .col.last {
+    flex: none;
+    width: 33%;
+  }
+
   .center {
     text-align: center;
   }
@@ -277,8 +282,8 @@
         <div>you will:</div>
       </div>
       <ul class="result-bullets">
-        <li>have soild understanding of Web Security model</li>
-        <li>know Web Security vulnerabilites and prevention methods</li>
+        <li>have a solid understanding of Web Security model</li>
+        <li>know Web Security vulnerabilities and prevention methods</li>
         <li>implement role-based authorization system in real-live app</li>
         <li>know how secure Angular app and backend API</li>
       </ul>
@@ -292,7 +297,7 @@
     <ul>
       <li>10-weeks learning program (worth 799$)</li>
       <li>10 LIVE group coaching sessions (worth 10 x 199$ = 1990$) 🔥</li>
-      <li>GPDR and legal guide (worth 399$)</li>
+      <li>GDPR and legal guide (worth 399$)</li>
       <li>Joint-work group on Slack (worth 199$)</li>
       <li>All the recordings from coaching sessions (worth 199$)</li>
       <li>List of authorization libaries (worth 49$)</li>
@@ -319,54 +324,156 @@
     </div>
     <ol class="lessons">
       <li>Welcome lesson</li>
-      <li>Welcome lesson <span class="hot">HOT!</span></li>
+      <li>The big goal</li>
+      <li>Course structure and topics</li>
+      <li>What you need</li>
+      <li>Training outcomes</li>
+      <li>Joint working</li>
+      <li>Homework</li>
     </ol>
   </div>
   <div class="col">
     <div class="module">
-      <div class="bold center">Module 1</div>
-      <div class="center">The big plan</div>
+      <div class="bold center">Module 2</div>
+      <div class="center">Web Security model</div>
     </div>
     <ol class="lessons">
       <li>Welcome lesson</li>
+      <li>Same-origin policy</li>
+      <li>Cross-origin resource sharing</li>
+      <li>Content Security Policy</li>
+      <li>Subresource intergrity</li>
+      <li>Cryptographic signatures</li>
+      <li>Homework</li>
     </ol>
   </div>
   <div class="col">
     <div class="module">
-      <div class="bold center">Module 1</div>
-      <div class="center">The big plan</div>
+      <div class="bold center">Module 3</div>
+      <div class="center">Client vs. server security</div>
     </div>
     <ol class="lessons">
       <li>Welcome lesson</li>
+      <li>Client-side security boundries</li>
+      <li>Server-side security</li>
+      <li>HTTPS Communication</li>
+      <li>Tokens vs. sessions <span class="hot">HOT!</span></li>
+      <li>When to use tokens?</li>
+      <li>When to use sessions?</li>
+      <li>Homework</li>
     </ol>
   </div>
 </div>
 <div class="cols section">
   <div class="col">
     <div class="module">
-      <div class="bold center">Module 1</div>
-      <div class="center">The big plan</div>
+      <div class="bold center">Module 4</div>
+      <div class="center">Security vulnerabilities</div>
     </div>
     <ol class="lessons">
       <li>Welcome lesson</li>
+      <li>OWASP Top 10</li>
+      <li>Cross-site scripting</li>
+      <li>Cross-site request forgery</li>
+      <li>JWT Hacking <span class="hot">HOT!</span></li>
+      <li>Other web applications attacks</li>
+      <li>Homework</li>
     </ol>
   </div>
   <div class="col">
     <div class="module">
-      <div class="bold center">Module 1</div>
-      <div class="center">The big plan</div>
+      <div class="bold center">Module 5</div>
+      <div class="center">Application architecure</div>
     </div>
     <ol class="lessons">
       <li>Welcome lesson</li>
+      <li>Application overview</li>
+      <li>Secured Angular parts</li>
+      <li>Secured API</li>
+      <li>Node.js application setup</li>
+      <li>Homework</li>
     </ol>
   </div>
   <div class="col">
     <div class="module">
-      <div class="bold center">Module 1</div>
-      <div class="center">The big plan</div>
+      <div class="bold center">Module 6</div>
+      <div class="center">Core features implementation</div>
     </div>
     <ol class="lessons">
       <li>Welcome lesson</li>
+      <li>Login feature</li>
+      <li>Sign up feature</li>
+      <li>Router Guards</li>
+      <li>HttpInterceptors</li>
+      <li>Homework</li>
+    </ol>
+  </div>
+</div>
+<div class="cols section">
+  <div class="col">
+    <div class="module">
+      <div class="bold center">Module 7</div>
+      <div class="center">Client security implementation</div>
+    </div>
+    <ol class="lessons">
+      <li>Welcome lesson</li>
+      <li>Content Security Policy</li>
+      <li>XSS prevention</li>
+      <li>CSRF prevention</li>
+      <li>HttpOnly and Secure Cookies <span class="hot">HOT!</span></li>
+      <li>UserAuth object</li>
+      <li>Storing JWT token <span class="hot">HOT!</span></li>
+      <li>Refreshing the token</li>
+      <li>Homework</li>
+    </ol>
+  </div>
+  <div class="col">
+    <div class="module">
+      <div class="bold center">Module 8</div>
+      <div class="center">API security implementation</div>
+    </div>
+    <ol class="lessons">
+      <li>Welcome lesson</li>
+      <li>Introduction to Express.js</li>
+      <li>Node.js security libraries</li>
+      <li>Generating JWT</li>
+      <li>Starting a session</li>
+      <li>Authorizing API calls</li>
+      <li>The two vectors of authorization</li>
+      <li>Preventing calls without the ownership</li>
+      <li>Preventing calls without the role</li>
+      <li>CORS</li>
+      <li>Homework</li>
+    </ol>
+  </div>
+  <div class="col">
+    <div class="module">
+      <div class="bold center">Module 9</div>
+      <div class="center">Roles and account management</div>
+    </div>
+    <ol class="lessons">
+      <li>Welcome lesson</li>
+      <li>Adding a new user to an account</li>
+      <li>Managing active sessions <span class="hot">HOT!</span></li>
+      <li>Resetting a password</li>
+      <li>Homework</li>
+    </ol>
+  </div>
+</div>
+<div class="cols section">
+  <div class="col last">
+    <div class="module">
+      <div class="bold center">Module 10</div>
+      <div class="center">GDPR and legal guidence</div>
+    </div>
+    <ol class="lessons">
+      <li>Welcome lesson</li>
+      <li>GDPR introduction</li>
+      <li>What you MUST do <span class="hot">HOT!</span></li>
+      <li>What you cannot do</li>
+      <li>Privacy policy</li>
+      <li>Terms of service</li>
+      <li>Homework</li>
     </ol>
   </div>
 </div>
@@ -418,11 +525,19 @@
   </div>
 </div>
 
-<div class="section-header">Frequently Asked Questions</div>
+<div class="section-header">When does the Academy start?</div>
+<div class="section center">
+  <div>
+    The Academy officially starts in <span class="highlighted bold">February 2020</span>.
+  </br>Since the official launch you will start receiving the materials and invitations for the live coaching sessions.
+  </div>
+</div>
+
+<!-- <div class="section-header">Frequently Asked Questions</div>
 <div class="section">
   <div class="bold">Question</div>
   <div>Answer</div>
-</div>
+</div> -->
 
 <div class="section-header">Are you ready to join?</div>
 <div class="section center">
@@ -431,6 +546,7 @@
       class="highlighted bold">Are you ready to take action?</span>
   </div>
 </div>
+
 <input type="button" class="join" value="Join the Academy">
 <div class="guarantee">
   🔒 100% satisfaction guaranteed!
