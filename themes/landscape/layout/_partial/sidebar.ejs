@@ -1,12 +1,12 @@
 <aside id="sidebar" <% if (theme.sidebar==='bottom' ){ %> class="outer" <% } %>>
   <div id="gradient"></div>
-  <div class="sidebar-info highlighted">
+  <div class="sidebar-info highlighted" style="display: none">
     <div id="incentive"><b>FREE Angular Security</br>Video Lesson</b> 🔒</div>
     <form class="subscription" method="get" action="https://mailchi.mp/326f35cfb0de/security">
       <input type="submit" href="" value="Watch now!" class="button cta cta-blue"></input>
     </form>
   </div>
-  <div class="sidebar-info">
+  <div class="sidebar-info" style="display: none">
     <div id="incentive">Join <b>+2100</b> subscribers</br> that receive latest Angular knowledge 🚀</div>
     <!-- Begin Mailchimp Signup Form -->
     <div id="mc_embed_signup">
@@ -28,6 +28,11 @@
     </div>
     <!--End mc_embed_signup-->
   </div>
+
+  <a href="/security" style="text-align: center">
+    <img src="/assets/bf.gif" style="width: 90%">
+  </a>
+
   <div id="space"></div>
   <div id="author">
     <img src="<%- url_for('assets') %>/bartosz.jpg" alt="Author">
