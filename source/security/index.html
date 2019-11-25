@@ -29,14 +29,20 @@
   .video {
     margin: auto;
     max-width: 900px;
-    height: 500px;
-    line-height: 500px;
+    max-height: 500px;
+    height: 48vw;
     background: gray;
     text-align: center;
     color: white;
   }
 
+  .video iframe {
+    width: 100%;
+    height: 100%;
+  }
+
   .join {
+    text-align: center;
     padding: 18px 36px;
     font-size: 38px;
     font-weight: bold;
@@ -217,6 +223,24 @@
     font-size: 20px;
     margin: 20px;
   }
+
+  @media (max-width: 768px) {
+    .instructor {
+      flex-direction: column;
+    }
+
+    .cols-column-reverse {
+      flex-direction: column-reverse;
+    }
+
+    .cols-column {
+      flex-direction: column;
+    }
+
+    .col.last {
+      width: 100%;
+    }
+  }
 </style>
 
 <div class="header">
@@ -233,7 +257,7 @@
   </p>
 </div>
 <div class="video">
-  <iframe src="https://player.vimeo.com/video/373738871" width="900" height="500" webkitallowfullscreen
+  <iframe src="https://player.vimeo.com/video/373738871" webkitallowfullscreen
     mozallowfullscreen allowfullscreen></iframe>
 </div>
 
@@ -285,7 +309,7 @@
     <span class="bold">10-weeks learning program</span> that will make you <span class="highlighted bold">confident
       about security</span></br>in your Angular applications (and any API)!
   </div>
-  <div class="cols">
+  <div class="cols cols-column-reverse">
     <div class="col">
       <img src="code.png" alt="">
     </div>
@@ -337,7 +361,7 @@
 <img class="top-40" src="other_way.png" alt="">
 
 <div class="section-header">Academy Agenda</div>
-<div class="cols section">
+<div class="cols cols-column section">
   <div class="col">
     <div class="module">
       <div class="bold center">Module 1</div>
@@ -385,7 +409,7 @@
     </ol>
   </div>
 </div>
-<div class="cols section">
+<div class="cols cols-column section">
   <div class="col">
     <div class="module">
       <div class="bold center">Module 4</div>
@@ -430,7 +454,7 @@
     </ol>
   </div>
 </div>
-<div class="cols section">
+<div class="cols cols-column section">
   <div class="col">
     <div class="module">
       <div class="bold center">Module 7</div>
@@ -481,7 +505,7 @@
     </ol>
   </div>
 </div>
-<div class="cols section">
+<div class="cols cols-column section">
   <div class="col last">
     <div class="module">
       <div class="bold center">Module 10</div>
@@ -533,7 +557,7 @@
 </div>
 
 <div class="section-header">Risk-free guarantee</div>
-<div class="cols section">
+<div class="cols section cols-column">
   <div class="col">
     The materials are going to be designed to give you 10x more value tak you expect. But, if for whatever reason you
     will not be satified, then you can write an email within 30 days of official lauch of the program to
