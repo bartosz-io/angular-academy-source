@@ -10,7 +10,7 @@ date: 2019-04-01 14:13:07
 Introduction
 </p>
 
-This General Terms and Conditions document (hereinafter referred to as **GTC**) defines the conditions for the provision of Services and Electronic Services (defined below) by Bartosz Pietrucha trading as **Bartosz Pietrucha** (hereinafter ‘Provider’), registered in Central Electronic Register and Information on Economic Activity (CEDIG) by the minister competent for economy at the address: Zielińskiego 36/36, 53-543 Wrocław. The company uses the tax number NIP:751 170 1210. The rights and obligations of the Provider and Participants (defined below).
+This General Terms and Conditions document (hereinafter referred to as **GTC**) defines the conditions for the provision of Services and Electronic Services (defined below) by Bartosz Pietrucha trading as **Bartosz Pietrucha** (hereinafter ‘Provider’), registered in Central Electronic Register and Information on Economic Activity (CEDIG) by the minister competent for economy at the address: Zielińskiego 36/36, 53-534 Wrocław. The company uses the tax number NIP:751 170 1210. The rights and obligations of the Provider and Participants (defined below).
 
 <p style="text-align: center;">
 § 2
