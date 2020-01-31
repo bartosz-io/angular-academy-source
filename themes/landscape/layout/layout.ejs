@@ -2,7 +2,9 @@
 <body>
   <div id="container">
     <div id="wrap">
-    <%- partial('_partial/header', {hide: page.source === 'security/index.html'}, {cache: !config.relative_link}) %>
+    <% if (!(page.source === 'security/index.html')) { %>
+      <%- partial('_partial/header', {cache: !config.relative_link}) %>
+    <% } %>
     <div id="wrap" <% if (is_home() || page.source === 'security/index.html') { %> class="no-margin-left" <% } %>>
       <div id="content">
         <% if (!(is_home() || page.source === 'security/index.html')) { %>
