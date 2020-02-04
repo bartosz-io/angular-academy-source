@@ -143,6 +143,7 @@
   }
 
   .join-wrapper {
+    font-family: Rubik, sans-serif;
     width: 80%;
     text-align: center;
   }
@@ -171,7 +172,6 @@
   }
 
   .ends-in {
-    font-family: Rubik, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -193,7 +193,25 @@
   }
 
   .counter {
-    margin-bottom: 40px;
+    margin: 20px;
+    color: #FF0666;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+
+  .counter-block {
+    margin-right: 25px;
+    width: 55px;
+  }
+
+  .counter-block:last-child {
+    margin-right: 0;
+  }
+
+  .counter-legend {
+    font-size: 14px;
   }
 
   .guarantee {
@@ -956,14 +974,31 @@
           authorization</span> in Angular and Node.js
       </p>
       <div class="join-wrapper">
-          <a href="https://angular-academy.teachable.com/purchase?product_id=1601992">
-            <div class="join">Join the Academy!</div>
-          </a>
+        <a href="https://angular-academy.teachable.com/purchase?product_id=1601992">
+          <div class="join">Join the Academy!</div>
+        </a>
         <div class="ends-in">
           <span class="warning"></span>
-          <span>Registration ends</span>
+          <span>Registration ends in</span>
         </div>
-        <div class="counter bold">26.02.2020</div>
+        <div class="counter" id="counter">
+          <div class="counter-block">
+            <div id="days">0</div>
+            <div class="counter-legend">Days</div>
+          </div>
+          <div class="counter-block">
+            <div id="hours">0</div>
+            <div class="counter-legend">Hours</div>
+          </div>
+          <div class="counter-block">
+            <div id="minutes">0</div>
+            <div class="counter-legend">Minutes</div>
+          </div>
+          <div class="counter-block">
+            <div id="seconds">0</div>
+            <div class="counter-legend">Seconds</div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="col intro-video">
@@ -977,6 +1012,38 @@
     </div>
   </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    var countDownDate = new Date(Date.UTC(2020, 1, 26, 21, 0, 0)).getTime();
+
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      document.getElementById("days2").innerHTML = days;
+      document.getElementById("hours2").innerHTML = hours;
+      document.getElementById("minutes2").innerHTML = minutes;
+      document.getElementById("seconds2").innerHTML = seconds;
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("counter").innerHTML = "EXPIRED";
+        document.getElementById("counter2").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  });
+</script>
 
 <div>
   <div class="section-header">By the end of this program, you will...</div>
@@ -1467,20 +1534,25 @@
     <div class="col02"></div>
     <div class="col">
       <div class="bold">How will the program be delivered?</div>
-      <div class="answer">The video lessons will be hosted on Teachable.com. The coaching sessions will be delivered via Zoom.us.
+      <div class="answer">The video lessons will be hosted on Teachable.com. The coaching sessions will be delivered via
+        Zoom.us.
       </div>
     </div>
   </div>
   <div class="section cols">
     <div class="col">
       <div class="bold">Will I receive all the materials at once?</div>
-      <div class="answer">No. The Academy lasts for 10 weeks. In order for you to get the most of the program and facilitate joint working with other students, each module is scheduled for one week. You will receive an access to the materials in each module every consecutive week, starting 17.02.2020.
+      <div class="answer">No. The Academy lasts for 10 weeks. In order for you to get the most of the program and
+        facilitate joint working with other students, each module is scheduled for one week. You will receive an access
+        to the materials in each module every consecutive week, starting 17.02.2020.
       </div>
     </div>
     <div class="col02"></div>
     <div class="col">
       <div class="bold">When are the live coaching sessions going to be held?</div>
-      <div class="answer">To solve all the problems and answer the questions in the learing process, every Thursday, during the Academy, at 8pm GMT there will be a live coaching session (online class) organized for all the students.</div>
+      <div class="answer">To solve all the problems and answer the questions in the learing process, every Thursday,
+        during the Academy, at 8pm GMT there will be a live coaching session (online class) organized for all the
+        students.</div>
     </div>
   </div>
   <div class="section cols">
@@ -1577,8 +1649,31 @@
     <div class="package-inner-bottom center">
       <div>This program will save you at least 100 hours of work and research!</div>
       <a href="https://angular-academy.teachable.com/purchase?product_id=1601992">
-        <div class="cta2">Join the Academy!</div>
+        <div class="join">Join the Academy!</div>
       </a>
+
+      <div class="ends-in">
+        <span class="warning"></span>
+        <span>Registration ends in</span>
+      </div>
+      <div class="counter" id="counter2">
+        <div class="counter-block">
+          <div id="days2">0</div>
+          <div class="counter-legend">Days</div>
+        </div>
+        <div class="counter-block">
+          <div id="hours2">0</div>
+          <div class="counter-legend">Hours</div>
+        </div>
+        <div class="counter-block">
+          <div id="minutes2">0</div>
+          <div class="counter-legend">Minutes</div>
+        </div>
+        <div class="counter-block">
+          <div id="seconds2">0</div>
+          <div class="counter-legend">Seconds</div>
+        </div>
+      </div>
     </div>
   </div>
   <a class="tc" href="https://docs.google.com/document/d/1T42ik6WbVr2ZVWeoxtd-ZBa8p1Y67ndNZukt6slig_U/edit">
