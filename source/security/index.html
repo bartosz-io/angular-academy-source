@@ -981,7 +981,7 @@ photos: assets/cover.png
           authorization</span> in Angular and Node.js
       </p>
       <div class="join-wrapper">
-        <a href="https://angular-academy.teachable.com/purchase?product_id=1601992">
+        <a class="join-link" href="https://angular-academy.teachable.com/purchase?product_id=1601992">
           <div class="join">Join the Academy!</div>
         </a>
         <div class="ends-in">
@@ -1378,7 +1378,7 @@ photos: assets/cover.png
       <div class="highlighted">$39,90 per week of learning</div>
     </div>
     <div class="col">
-      <a href="https://angular-academy.teachable.com/purchase?product_id=1601992">
+      <a class="join-link" href="https://angular-academy.teachable.com/purchase?product_id=1601992">
         <div class="cta2">Join the Academy!</div>
       </a>
     </div>
@@ -1655,7 +1655,7 @@ photos: assets/cover.png
   <div class="package">
     <div class="package-inner-bottom center">
       <div>This program will save you at least 100 hours of work and research!</div>
-      <a href="https://angular-academy.teachable.com/purchase?product_id=1601992">
+      <a class="join-link" href="https://angular-academy.teachable.com/purchase?product_id=1601992">
         <div class="join">Join the Academy!</div>
       </a>
 
@@ -1687,3 +1687,54 @@ photos: assets/cover.png
     Terms and Conditions
   </a>
 </div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    let aff = getCookie('_aff');
+
+    if (aff) {
+      setAffiliate(aff);
+    } else {
+      const params = new URLSearchParams(location.search);
+      aff = params.get('aff');
+      if (!isSane(aff)) {
+        return;
+      }
+      setCookie('_aff', aff, 180);
+      setAffiliate(aff);
+    }
+  });
+
+  function setAffiliate(aff) {
+    document.querySelectorAll('.join-link').forEach(el => {
+      el.href = el.href + '&affcode=' + aff;
+    });
+  }
+
+  function isSane(str) {
+    return str.match(/^[a-zA-Z0-9_]*$/) !== null;
+  }
+
+  function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
+  function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+</script>
