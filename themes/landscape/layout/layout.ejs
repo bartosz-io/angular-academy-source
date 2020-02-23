@@ -9,11 +9,10 @@
       <div id="content">
         <% if (!(is_home() || page.source === 'security/index.html')) { %>
           <div id="slack">
-            <div>
-              <div id="join-slack">📢 Join <span class="bold">Angular Enterprise Security Academy</span></div>
-              <div id="join-subtitle">🔑 Learn how to secure Angular and Node applications!</div>
-            </div>
-            <a class="slack-link" target="_blank" href="/security">Join</a>
+            <img src="<%- url_for('assets') %>/slack.png" alt="slack">
+            <span id="join-slack">Join our <span class="bold">Slack</span> community! Exchange knowledge, ask questions, get feedback!</span>
+            <span id="join-slack-short">Join our <span class="bold">Slack</span> community!</span>
+            <a class="slack-link" target="_blank" href="https://join.slack.com/t/angular-academy/shared_invite/enQtNDY1MjczMDA3ODEzLWRlYzhjMTgwMTJkN2M2MTAxNzcyMGY1MTVhYjZjMDc0NGE0YzI4YjA5NDMwY2IxYmQ2MWJiNTM1NGU0OTA4NDE">Join Slack</a>
           </div>
         <% } %>
         <div class="outer<% if (is_home()) { %> home<% } %>">
