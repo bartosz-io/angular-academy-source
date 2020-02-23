@@ -6,7 +6,74 @@
       <input type="submit" href="" value="Watch now!" class="button cta cta-blue"></input>
     </form>
   </div>
-  <div class="sidebar-info" id="sidebar-subscribe">
+
+  <div class="shake" style="margin: 0 10px; border-top: 2px solid red">
+    <img src="/assets/heist.jpg" alt="Security Academy" style="width: 100%">
+  <div style="text-align: center; background-color: red; color: white; margin-top: -5px; padding: 10px 0;">
+      <div style="font-weight: bold; font-size: 1.5em">Security Academy</div>
+      <div>closes enrollment in</div>
+    </div>
+    <div class="counter" id="counter">
+      <div class="counter-block">
+        <div id="days">0</div>
+        <div class="counter-legend">Days</div>
+      </div>
+      <div class="counter-block">
+        <div id="hours">0</div>
+        <div class="counter-legend">Hours</div>
+      </div>
+      <div class="counter-block">
+        <div id="minutes">0</div>
+        <div class="counter-legend">Minutes</div>
+      </div>
+      <div class="counter-block">
+        <div id="seconds">0</div>
+        <div class="counter-legend">Seconds</div>
+      </div>
+    </div>
+    <div style="background-color: white; padding: 10px 0 30px; text-align: center">
+      <a href="/security/?utm_source=sidebar" style="background: #d60153;
+      text-decoration: none;
+      padding: 12px 14px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      width: 100%;
+      margin-bottom: 5px;
+      cursor: pointer;
+      color: #fff;">Join now!</a>
+    </div>
+  </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    var countDownDate = new Date(Date.UTC(2020, 1, 26, 21, 0, 0)).getTime();
+
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("counter").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  });
+</script>
+
+  <div class="sidebar-info" id="sidebar-subscribe" style="display: none">
     <div id="incentive">Join <b>+<span class="odometer" id="sub-count"></span></b> subscribers</br> that receive latest Angular knowledge 🚀</div>
     <!-- Begin Mailchimp Signup Form -->
     <div id="mc_embed_signup">
