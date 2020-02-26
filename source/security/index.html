@@ -199,12 +199,18 @@ photos: assets/cover.png
     background-position: center;
   }
 
+  .notified {
+    margin: 10px 0;
+    font-size: 0.8em;
+    color: #D01150;
+  }
+
   .counter {
     margin: 20px;
     color: #FF0666;
     font-size: 28px;
     font-weight: bold;
-    display: flex;
+    display: none;
     justify-content: center;
   }
 
@@ -981,13 +987,24 @@ photos: assets/cover.png
           authorization</span> in Angular and REST API
       </p>
       <div class="join-wrapper">
-        <a class="join-link" href="https://angular-academy.teachable.com/purchase?product_id=1601992">
-          <div class="join">Join the Academy!</div>
+        <a class="join-link" onclick="joinList()">
+          <div class="join">Join the Waiting List</div>
         </a>
+        <script>
+          function popupwindow(url, title, w, h) {
+            var left = (screen.width/2)-(w/2);
+            var top = (screen.height/2)-(h/2);
+            return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+          }
+          function joinList(){
+            popupwindow('https://pietruchabartosz.activehosted.com/f/3', 'Join', 500, 600);
+          }
+        </script>
         <div class="ends-in">
           <span class="warning"></span>
-          <span>Registration ends in</span>
+          <span>Registration is closed</span>
         </div>
+        <div class="notified">Join the waiting list and get notified when we are open!</div>
         <div class="counter" id="counter">
           <div class="counter-block">
             <div id="days">0</div>
@@ -1009,11 +1026,11 @@ photos: assets/cover.png
       </div>
     </div>
     <div class="col intro-video">
-      <script src="https://fast.wistia.com/embed/medias/a48aijxhs0.jsonp" async></script>
+      <script src="https://fast.wistia.com/embed/medias/hyp6as0c07.jsonp" async></script>
       <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
       <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
         <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span
-            class="wistia_embed wistia_async_a48aijxhs0 popover=true popoverAnimateThumbnail=true videoFoam=true"
+            class="wistia_embed wistia_async_hyp6as0c07 popover=true popoverAnimateThumbnail=true videoFoam=true"
             style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div>
       </div>
     </div>
@@ -1378,8 +1395,8 @@ photos: assets/cover.png
       <div class="highlighted">$39,90 per week of learning</div>
     </div>
     <div class="col">
-      <a class="join-link" href="https://angular-academy.teachable.com/purchase?product_id=1601992">
-        <div class="cta2">Join the Academy!</div>
+      <a class="join-link" onclick="joinList()">
+        <div class="cta2">Join the Waiting List</div>
       </a>
     </div>
   </div>
@@ -1655,13 +1672,13 @@ photos: assets/cover.png
   <div class="package">
     <div class="package-inner-bottom center">
       <div>This program will save you at least 100 hours of work and research!</div>
-      <a class="join-link" href="https://angular-academy.teachable.com/purchase?product_id=1601992">
-        <div class="join">Join the Academy!</div>
+      <a class="join-link" onclick="joinList()">
+        <div class="join">Join the Waiting List</div>
       </a>
 
       <div class="ends-in">
         <span class="warning"></span>
-        <span>Registration ends in</span>
+        <span>Registration is closed</span>
       </div>
       <div class="counter" id="counter2">
         <div class="counter-block">
@@ -1689,7 +1706,7 @@ photos: assets/cover.png
 </div>
 
 <script>
-  window.addEventListener('DOMContentLoaded', function () {
+  function appendAffCode() {
     let aff = getCookie('_aff');
 
     if (aff) {
@@ -1703,7 +1720,8 @@ photos: assets/cover.png
       setCookie('_aff', aff, 180);
       setAffiliate(aff);
     }
-  });
+  }
+  // window.addEventListener('DOMContentLoaded', appendAffCode());
 
   function setAffiliate(aff) {
     document.querySelectorAll('.join-link').forEach(el => {
