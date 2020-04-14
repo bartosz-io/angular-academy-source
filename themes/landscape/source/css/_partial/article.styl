@@ -25,6 +25,62 @@
 .article
   width: 100%
 
+  div.security_banner
+    background: rgb(252,176,69);
+    background: linear-gradient(90deg, rgba(252,176,69,1) 41%, rgba(255,255,255,0) 100%);
+    padding: 20px 30px;
+    margin: 50px 0;
+    display: flex;
+
+    .join
+      display: block;
+      text-align: center;
+      background: #d60153;
+      text-decoration: none;
+      padding: 12px 14px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      width: 100%;
+      margin-bottom: 5px;
+      cursor: pointer;
+      color: #fff;
+      max-width: 200px;
+
+    .logo
+      margin: auto;
+
+      img
+        max-height: 250px;
+      .title
+        text-align: center;
+        font-size: 30px;
+        font-weight: 800;
+        font-family: monospace;
+        margin-top: -25px;
+        margin-bottom: 10px;
+        color: #d60153;
+
+      @media mq-mobile-and-tablet
+        display: none;
+
+    .text
+      flex-grow: 1;
+      margin-right: 20%;
+
+      .title
+        color: white;
+        font-size: 2.2em;
+        font-weight: bold;
+      
+      .subtitle
+        font-size: 1.2em;
+        margin-bottom: 25px;
+
+      .content
+        margin: 20px 0;
+
   a.cta
     padding: 30px;
     font-size: 1.5em
