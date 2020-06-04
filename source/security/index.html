@@ -1066,6 +1066,23 @@ photos: assets/cover.png
     line-height: 28px;
   }
 
+  @media (max-width: 600px) {
+    .package.absolute {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .day-card {
+      padding: 8px 2px;
+    }
+
+    .day-desc {
+      font-size: 12px;
+    }
+  }
+
   @media (max-width: 768px) {
 
     .mobile-hidden {
@@ -1339,16 +1356,21 @@ photos: assets/cover.png
     }
 
     .chip {
-      margin-left: 30px;
-      margin-right: 30px;
+      padding: 6px 30px;
+      display: inline-block;
+      position: relative;
+      transform: translateX(-50%);
+      left: 50%;
     }
 
     .schedule-left:after {
-      right: 10px;
+      left: 0px;
+      top: -50px;
     }
 
     .schedule-right:after {
-      left: 10px;
+      left: 0px;
+      top: -50px;
     }
 
     .mobile-mb-50 {
@@ -1356,8 +1378,6 @@ photos: assets/cover.png
     }
 
     .package.absolute {
-      margin-left: 20px;
-      margin-right: 20px;
       margin-top: 50px;
     }
 
@@ -1817,8 +1837,8 @@ photos: assets/cover.png
       </ul>
     </div>
   </div>
-  <div class="center agenda-hidden">
-    <div class="chip bold rubik-20-28 mb-50">Homework after each module</div>
+  <div class="agenda-hidden">
+    <div class="chip bold rubik-20-28 mb-50 center">Homework after each module</div>
   </div>
 
   <div id="show-agenda" class="cta2">Show full agenda</div>
