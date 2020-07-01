@@ -486,7 +486,6 @@ photos: assets/cover.png
     color: #FF0666;
     font-size: 28px;
     font-weight: bold;
-    display: none;
     justify-content: center;
   }
 
@@ -1540,7 +1539,7 @@ photos: assets/cover.png
     <div class="nav-link mobile-hidden"><a href="#testimonials">Testimonials</a></div>
     <div class="nav-link"><a href="#faq">FAQ</a></div>
     <div class="nav-link mobile-hidden"><a href="https://angular-academy.teachable.com">Login</a></div>
-    <div class="nav-link filled" onclick="joinList()"><a href="#">Join</a></div>
+    <div class="nav-link filled"><a href="https://angular-academy.teachable.com/purchase?product_id=2190621">Join</a></div>
   </div>
 
   <div class="section-wrapper">
@@ -1572,8 +1571,8 @@ photos: assets/cover.png
         </div>
       </div>
       <div class="join-wrapper mw400">
-        <a class="join-link" onclick="joinList()">
-          <div class="join">Join the Waiting List</div>
+        <a class="join-link" href="https://angular-academy.teachable.com/purchase?product_id=2190621">
+          <div class="join">Join the Program</div>
         </a>
         <script>
           function popupwindow(url, title, w, h) {
@@ -1589,8 +1588,8 @@ photos: assets/cover.png
           }
         </script>
         <div class="ends-in">
-          <span class="_warning"></span>
-          <span>Registration starts <b>July 1st, 2020</b></span>
+          <span class="warning"></span>
+          <span>Registration closes <b>July 8, 2020</b> in</span>
         </div>
         <div class="counter" id="counter">
           <div class="counter-block">
@@ -1615,7 +1614,7 @@ photos: assets/cover.png
     <script>
       document.addEventListener('DOMContentLoaded', () => {
 
-        var countDownDate = new Date(Date.UTC(2020, 1, 26, 21, 0, 0)).getTime();
+        var countDownDate = new Date(Date.UTC(2020, 6, 8, 20, 0, 0)).getTime();
 
         var x = setInterval(function () {
           var now = new Date().getTime();
@@ -2606,7 +2605,7 @@ photos: assets/cover.png
           </div>
         </div>
         <div class="join-wrapper">
-          <a class="join-link" onclick="joinList()">
+          <a class="join-link" href="https://angular-academy.teachable.com/purchase?product_id=2190621">
             <div class="join narrow">Join now - price rises every edition</div>
           </a>
         </div>
@@ -2939,13 +2938,11 @@ photos: assets/cover.png
 </div>
 
 <div class="bottom-cta">
-  <div class="bottom-cta-title">Subscribe to the waiting list</div>
+  <div class="bottom-cta-title">Don't miss the deadline!</div>
   <div class="package">
     <div class="package-inner-bottom center">
-      <div class="bold">Currently registration is closed!</div>
-      <div>Be the first to know when the next edition starts!</div>
-      <a class="join-link" onclick="joinList()">
-        <div class="join">Join the Waiting List</div>
+      <a class="join-link" href="https://angular-academy.teachable.com/purchase?product_id=2190621">
+        <div class="join">Join the Program</div>
       </a>
 
       <div class="counter" id="counter2">
@@ -3054,7 +3051,7 @@ photos: assets/cover.png
 <!--End of Tawk.to Script-->
 
 <!-- Start of Async ProveSource Code -->
-<!-- <script>
+<script>
   ! function (o, i) {
     window.provesrc && window.console && console.error && console.error("ProveSource is included twice in this page."),
       provesrc = window.provesrc = {
@@ -3074,5 +3071,5 @@ photos: assets/cover.png
     var e = i.getElementsByTagName("script")[0];
     e.parentNode.insertBefore(r, e)
   }(window, document);
-</script> -->
+</script>
 <!-- End of Async ProveSource Code -->
