@@ -9,12 +9,13 @@
 
   <div class="shake" style="margin: 0 10px; border-top: 2px solid red">
     <img src="/assets/heist.jpg" alt="Security Academy" style="width: 100%">
-  <div style="text-align: center; background-color: goldenrod; color: white; margin-top: -5px; padding: 10px 0;">
+  <div style="text-align: center; background-color: red; color: white; margin-top: -5px; padding: 10px 0;">
       <div style="font-weight: bold; font-size: 1.6em">Security Academy</div>
-      <div>10-week master class</div>
+      <div>12-week coaching program</div>
+      <div style="font-size: 2em">CLOSING IN</div>
     </div>
-    <div class="counter" id="counter" style="display: none">
-      <div class="counter-block">
+    <div class="counter" id="counter">
+      <div class="counter-block" style="display: none;">
         <div id="days">0</div>
         <div class="counter-legend">Days</div>
       </div>
@@ -49,7 +50,7 @@
   <script>
   document.addEventListener('DOMContentLoaded', () => {
 
-    var countDownDate = new Date(Date.UTC(2020, 1, 26, 21, 0, 0)).getTime();
+    var countDownDate = new Date(Date.UTC(2020, 6, 8, 20, 0, 0)).getTime();
 
     var x = setInterval(function () {
       var now = new Date().getTime();
