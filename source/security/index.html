@@ -1571,8 +1571,8 @@ photos: assets/cover.png
         </div>
       </div>
       <div class="join-wrapper mw400">
-        <a style="display: none;" class="join-link" href="https://angular-academy.teachable.com/purchase?product_id=2190621">
-          <div class="join">Join for 41$ / week</div>
+        <a class="join-link" onclick="joinList()">
+          <div class="join">Join the Waiting List</div>
         </a>
         <script>
           function popupwindow(url, title, w, h) {
@@ -1588,8 +1588,7 @@ photos: assets/cover.png
           }
         </script>
         <div class="ends-in" style="margin-top: 20px">
-          <span>Registration is closed</span>
-          <span class="warning"></span>
+          <span>Be the first to know when we open!</span>
         </div>
         <div class="counter" id="counter" style="display: none;">
           <div class="counter-block">
@@ -2604,9 +2603,9 @@ photos: assets/cover.png
             Pay once and get a lifetime access to all lessons and content from all the future Academy editions.
           </div>
         </div>
-        <div class="join-wrapper" style="display: none;">
-          <a class="join-link" href="https://angular-academy.teachable.com/purchase?product_id=2190621">
-            <div class="join narrow">Join now - it's 41$ per week</div>
+        <div class="join-wrapper">
+          <a class="join-link" onclick="joinList()">
+            <div class="join narrow">Join the Waiting List</div>
           </a>
         </div>
       </div>
@@ -2940,12 +2939,12 @@ photos: assets/cover.png
 <div class="bottom-cta">
   <div class="bottom-cta-title">Registration is closed</div>
   <div class="package">
-    <div class="package-inner-bottom center" style="display: none;">
-      <a class="join-link" href="https://angular-academy.teachable.com/purchase?product_id=2190621">
-        <div class="join">Join the Program</div>
+    <div class="package-inner-bottom center">
+      <a class="join-link" onclick="joinList()">
+        <div class="join">Join the Waiting List</div>
       </a>
-
-      <div class="counter" id="counter2">
+      <div>Be the first to know about the registration!</div>
+      <div class="counter" id="counter2" style="display: none;">
         <div class="counter-block">
           <div id="days2">0</div>
           <div class="counter-legend">Days</div>
@@ -3000,7 +2999,7 @@ photos: assets/cover.png
       setAffiliate(aff);
     }
   }
-  window.addEventListener('DOMContentLoaded', appendAffCode());
+  // window.addEventListener('DOMContentLoaded', appendAffCode());
 
   function setAffiliate(aff) {
     document.querySelectorAll('.join-link').forEach(el => {
@@ -3051,7 +3050,7 @@ photos: assets/cover.png
 <!--End of Tawk.to Script-->
 
 <!-- Start of Async ProveSource Code -->
-<script>
+<!-- <script>
   ! function (o, i) {
     window.provesrc && window.console && console.error && console.error("ProveSource is included twice in this page."),
       provesrc = window.provesrc = {
@@ -3071,5 +3070,5 @@ photos: assets/cover.png
     var e = i.getElementsByTagName("script")[0];
     e.parentNode.insertBefore(r, e)
   }(window, document);
-</script>
+</script> -->
 <!-- End of Async ProveSource Code -->
