@@ -58,7 +58,7 @@ Below code snippet contains `CategoriesComponent` using `SettingsFacade` instanc
 export class CategoriesComponent implements OnInit {
 
   newCategory: CashflowCategory = new CashflowCategory();
-  cashflowCategories$: Observable<CashflowCategory>[];
+  cashflowCategories$: Observable<CashflowCategory[]>;
   isUpdating$: Observable<boolean>;
 
   constructor(private settingsFacade: SettingsFacade) {
