@@ -1,9 +1,8 @@
 # Header
 menu:
   Blog: /blog
-  Workshops: /workshops
 highlighted:
-  Videos: https://www.youtube.com/c/AngularAcademy
+  Security Academy: /security?utm_source=top_nav
   # Hire me: /hire
 rss: /atom.xml
 
