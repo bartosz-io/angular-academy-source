@@ -57,11 +57,12 @@ Below code snippet contains `CategoriesComponent` using `SettingsFacade` instanc
 })
 export class CategoriesComponent implements OnInit {
 
-  @Input() cashflowCategories$: CashflowCategory[];
   newCategory: CashflowCategory = new CashflowCategory();
+  cashflowCategories$: Observable<CashflowCategory>[];
   isUpdating$: Observable<boolean>;
 
   constructor(private settingsFacade: SettingsFacade) {
+    this.cashflowCategories$ = categoriesFacade.getCashflowCategories$();
     this.isUpdating$ = settingsFacade.isUpdating$();
   }
 
