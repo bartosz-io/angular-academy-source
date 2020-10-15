@@ -2,7 +2,7 @@
 menu:
   Blog: /blog
 highlighted:
-  Security Academy: /security?utm_source=top_nav
+  Security Academy 🚀: https://websecurity-academy.com/?utm_source=angular_academy&utm_medium=top_nav
   # Hire me: /hire
 rss: /atom.xml
 
