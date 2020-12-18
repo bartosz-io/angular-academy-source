@@ -5,6 +5,12 @@
   force = true
 
 [[redirects]]
+  from = "/workshops"
+  to = "https://dev-academy.com/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "https://dev-academy.com/:splat"
   status = 301
