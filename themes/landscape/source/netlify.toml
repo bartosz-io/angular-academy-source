@@ -6,6 +6,6 @@
 
 [[redirects]]
   from = "/*"
-  to = "https://dev-academy.com/"
+  to = "https://dev-academy.com/:splat"
   status = 301
   force = true
