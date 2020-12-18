@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/blog"
+  to = "https://dev-academy.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "https://dev-academy.com/"
+  status = 301
+  force = true
